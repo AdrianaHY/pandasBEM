@@ -7,67 +7,67 @@
     <title>Pandas Sass</title>
   </head>
   <body>
-    <header class="container">
-      <nav>
+    <header>
+      <nav class="container">
         <div class="row">
-          <div class="col-6-offset menu">
-            <span><a href="#">Inicio</a></span>
-            <span><a href="#">Filmografía</a></span>
-            <span><a href="#">Biografía</a></span>
-            <span><a href="#">Galería</a></span>
+          <div class="col-9 col-3-offset menu">
+            <span><a class="menu__item" href="#">Inicio</a></span>
+            <span><a class="menu__item--active" href="#">Filmografía</a></span>
+            <span><a class="menu__item" href="#">Biografía</a></span>
+            <span><a class="menu__item" href="#">Galería</a></span>
           </div>
         </div>
       </nav>
     </header>
 
-    <section class="container">
+    <section class="container container-images">
       <div class="row">
         <div class="col-3">
           <div class="row">
-            <img class="col-12" src="assets/img/01.jpg" alt="gondry1">
+            <img class="col-12 container-images__images responsive-image" src="assets/img/01.jpg" alt="gondry1">
             <span class="close">&times;</span>
           </div>
         </div>
         <div class="col-3">
           <div class="row">
-            <img class="col-12" src="assets/img/02.jpg" alt="gondry2">
+            <img class="col-12 container-images__images responsive-image" src="assets/img/02.jpg" alt="gondry2">
             <span class="close">&times;</span>
           </div>
         </div>
         <div class="col-3">
           <div class="row">
-            <img class="col-12" src="assets/img/03.jpg" alt="gondry3">
+            <img class="col-12 container-images__images responsive-image" src="assets/img/03.jpg" alt="gondry3">
             <span class="close">&times;</span>
           </div>
         </div>
         <div class="col-3">
           <div class="row">
-            <img class="col-12" src="assets/img/04.jpg" alt="gondry4">
+            <img class="col-12 container-images__images responsive-image" src="assets/img/04.jpg" alt="gondry4">
             <span class="close">&times;</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container">
+    <section class="container container-buttons">
       <div class="row">
         <div class="col-3 col-2-offset">
-          <button type="button" id="origen">Origen</button>
+          <button type="button"class="btn btn--blue" id="origen">Origen</button>
         </div>
         <div class="col-3">
-          <button type="button" id="premios">Premios</button>
+          <button type="button"class="btn btn--blue" id="premios">Premios</button>
         </div>
         <div class="col-3">
-          <button type="button" id="restaurar">Restaurar fotos</button>
+          <button type="button"class="btn btn--blue" id="restaurar">Restaurar fotos</button>
         </div>
       </div>
     </section>
 
-    <section class="container">
+    <section class="container container-paragraphs">
       <div class="row">
         <div class="col-6">
           <div class="row">
-              <p class="col-12">
+              <p class="col-12 container-paragraphs__paragraphs">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna
                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -79,9 +79,9 @@
               </p>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 ">
           <div class="row">
-              <p class="col-12">
+              <p class="col-12 container-paragraphs__paragraphs">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna
                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -96,10 +96,10 @@
       </div>
     </section>
 
-    <footer class="container">
+    <footer >
       <div class="row">
-        <p>
-          Powered by @AdrianaHY
+        <p class="col-12">
+          @AdrianaHY
         </p>
       </div>
     </footer>
