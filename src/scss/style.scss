@@ -1,3 +1,6 @@
+@import "variables";
+@import "mixin";
+
 *{
   box-sizing: border-box;
   margin:0;
@@ -35,4 +38,71 @@
     margin-left:widthColumns($numColumn)
   }
 }
+}
+body{
+  background-color: rgba(200, 93, 163, 0.7);
+}
+header{
+  position: fixed;
+  background-color: $background-color;;
+  width: $width;
+  top: 0;
+  padding: 2%;
+  margin-bottom: 2%;
+  .menu{
+    padding: 14px 70px;
+    overflow: auto;
+    &__item{
+      @include button;
+      &--active{
+        @extend __item !optional;
+        color: $dark-gray;
+      }
+      &--active:visited{
+        @extend __item !optional;
+        color: $white;
+        }
+    }
+    span:hover{
+      background-color: $gray;
+      font-size: 120%;
+    }
+    &__item:visited{
+      color: $dark-gray;
+    }
+  }
+}
+.container-images{
+  margin-top: $margin;
+&__images{
+  margin-top: 1rem;
+  padding: 5%;
+}
+}
+.responsive-image {
+  @include responsive;
+}
+
+.container-paragraphs{
+  margin-bottom: $margin;
+  &__paragraphs{
+    @include paragraph;
+}
+}
+.btn {
+  font-weight: normal;
+  padding: 4% 6%;
+  margin: 5%;
+  outline: $none;
+  border-radius: 5px;
+  cursor: pointer;
+  &--blue{
+    @include general;
+  }
+}
+footer{
+  @include general;
+  p{
+    text-align: center;
+  }
 }

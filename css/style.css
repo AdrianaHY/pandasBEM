@@ -487,4 +487,67 @@
 .col-12-offset {
   margin-left: 100%; }
 
+body {
+  background-color: rgba(200, 93, 163, 0.7); }
+
+header {
+  position: fixed;
+  background-color: #5cabaf;
+  width: 100%;
+  top: 0;
+  padding: 2%;
+  margin-bottom: 2%; }
+  header .menu {
+    padding: 14px 70px;
+    overflow: auto; }
+    header .menu__item {
+      margin: 3%;
+      text-decoration: none; }
+      header .menu__item--active {
+        color: 323A3A; }
+      header .menu__item--active:visited {
+        color: #fff; }
+    header .menu span:hover {
+      background-color: 4F6666;
+      font-size: 120%; }
+    header .menu__item:visited {
+      color: 323A3A; }
+
+.container-images {
+  margin-top: 20vh; }
+  .container-images__images {
+    margin-top: 1rem;
+    padding: 5%; }
+
+.responsive-image {
+  display: block;
+  max-width: 100%;
+  height: 10rem;
+  max-height: auto; }
+
+.container-paragraphs {
+  margin-bottom: 20vh; }
+  .container-paragraphs__paragraphs {
+    background-color: #fff;
+    color: #5cabaf;
+    font-size: 3vh;
+    text-align: center; }
+
+.btn {
+  font-weight: normal;
+  padding: 4% 6%;
+  margin: 5%;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer; }
+  .btn--blue {
+    background-color: #5cabaf;
+    color: #fff; }
+
+footer {
+  background-color: #5cabaf;
+  color: #fff; }
+  footer p {
+    text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
