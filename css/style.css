@@ -518,6 +518,8 @@ header {
   .container-images__images {
     margin-top: 1rem;
     padding: 5%; }
+  .container-images span {
+    cursor: pointer; }
 
 .responsive-image {
   display: block;

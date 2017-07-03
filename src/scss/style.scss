@@ -78,10 +78,15 @@ header{
   margin-top: 1rem;
   padding: 5%;
 }
+span{
+  cursor: pointer;
+}
+
 }
 .responsive-image {
   @include responsive;
 }
+
 
 .container-paragraphs{
   margin-bottom: $margin;
